@@ -80,6 +80,8 @@ The frontend will be available at `http://localhost:3000`.
 - `GET /api/scores` - (Optional) Retrieves the leaderboard
 
 ---
+![image](https://github.com/user-attachments/assets/16c18136-42df-4d72-b81c-b3642b906df7)
+
 
 ## How to Play
 
