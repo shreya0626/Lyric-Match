@@ -1,5 +1,5 @@
-Lyric Match - AI-Powered Song Guessing Game
-Overview
+**Lyric Match - AI-Powered Song Guessing Game
+**Overview
 Lyric Match is a web application that challenges users to guess the title of an English song based on a short snippet of its lyrics, provided by an AI. The application consists of a React JS frontend and a Node.js backend, integrated with Google's Gemini API to generate lyric snippets.
 
 Features
