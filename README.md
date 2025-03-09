@@ -85,5 +85,5 @@ The frontend will be available at `http://localhost:3000`.
 This project is licensed under the MIT License.
 
 ## Author
-Developed by [Shreya C]([https://github.com/shreya0626]). Contributions are welcome!
+Developed by [Shreya C]((https://github.com/shreya0626)). Contributions are welcome!
 
