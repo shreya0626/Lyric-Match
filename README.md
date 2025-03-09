@@ -1,120 +1,89 @@
-**Lyric Match - AI-Powered Song Guessing Game
-**Overview
-Lyric Match is a web application that challenges users to guess the title of an English song based on a short snippet of its lyrics, provided by an AI. The application consists of a React JS frontend and a Node.js backend, integrated with Google's Gemini API to generate lyric snippets.
+# Lyric Match
 
-Features
-Generate Lyric Snippet: Users can generate a short lyric snippet from a random English song.
+Lyric Match is a fun web-based game where players guess the song title based on provided lyrics. The application utilizes a React frontend, Node.js/Express backend, and an AI-based lyrics generation system.
 
-Guess the Song: Users can input their guess for the song title.
+## Features
+- Randomly selects lyrics from a set of songs.
+- Users enter their guesses for the song title.
+- Displays correct/incorrect responses and keeps track of scores.
+- Interactive UI with real-time feedback.
 
-Check Answer: The application checks if the user's guess matches the correct song title.
+## Tech Stack
+- Frontend: React.js
+- Backend: Node.js with Express.js
+- AI Integration: Large Language Model (LLM) for lyric generation
+- Database: MongoDB (optional for storing scores)
 
-Result Display: The application displays whether the guess is correct or incorrect, and the actual song title if incorrect.
+---
 
-Prerequisites
-Before you begin, ensure you have the following installed:
+## Setup and Installation
 
-Node.js (v14 or higher)
+### Prerequisites
+Ensure you have the following installed on your system:
+- **Node.js** (v16 or higher)
+- **npm** or **yarn**
+- **MongoDB** (if using a database for scores)
 
-npm (usually comes with Node.js)
-
-Git
-
-Setup Instructions
-1. Clone the Repository
-bash
-Copy
-git clone https://github.com/your-username/lyric-match.git
+### Clone the Repository
+```sh
+git clone https://github.com/yourusername/lyric-match.git
 cd lyric-match
-2. Set Up the Backend
-Navigate to the backend directory:
+```
 
-bash
-Copy
-cd backend
-Install the required dependencies:
-
-bash
-Copy
+### Install Dependencies
+#### Backend
+```sh
+cd server
 npm install
-Create a .env file in the backend directory and add your Gemini API key:
-
-env
-Copy
-GEMINI_API_KEY=your_gemini_api_key_here
-Start the backend server:
-
-bash
-Copy
-npm start
-The backend server will run on http://localhost:5000.
-
-3. Set Up the Frontend
-Navigate to the frontend directory:
-
-bash
-Copy
-cd ../frontend
-Install the required dependencies:
-
-bash
-Copy
+```
+#### Frontend
+```sh
+cd client
 npm install
-Start the frontend development server:
+```
 
-bash
-Copy
+### Running the Application
+#### Start the Backend Server
+```sh
+cd server
 npm start
-The frontend application will run on http://localhost:3000.
+```
+The backend server will run at `http://localhost:5000`.
 
-4. Running the Application
-Ensure both the backend and frontend servers are running.
+#### Start the Frontend
+```sh
+cd client
+npm start
+```
+The frontend will be available at `http://localhost:3000`.
 
-Open your web browser and navigate to http://localhost:3000.
+---
 
-Use the "Generate Lyric Snippet" button to get a lyric snippet.
+## API Endpoints
+- `GET /api/lyrics` - Fetches a random lyric snippet
+- `POST /api/guess` - Checks the user's guess against the correct song title
+- `GET /api/scores` - (Optional) Retrieves the leaderboard
 
-Enter your guess in the input field and click "Check Answer" to see if your guess is correct.
+---
 
-Project Structure
-Copy
-lyric-match/
-├── backend/
-│   ├── node_modules/
-│   ├── .env
-│   ├── index.js
-│   ├── package.json
-│   └── package-lock.json
-├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   ├── src/
-│   │   ├── App.css
-│   │   ├── App.js
-│   │   ├── index.css
-│   │   └── index.js
-│   ├── package.json
-│   └── package-lock.json
-└── README.md
-Dependencies
-Backend
-express: Web framework for Node.js
+## How to Play
+1. Start the application and navigate to `http://localhost:3000`.
+2. Read the displayed lyric snippet.
+3. Type your guess for the song title and submit.
+4. The application will validate your guess and update the score.
+5. Try to get as many correct answers as possible!
 
-axios: HTTP client for making API requests
+---
 
-cors: Middleware for enabling CORS
+## Future Enhancements
+- Implement multiplayer mode with WebSockets.
+- Improve AI lyric selection and expand song database.
+- Add a hints feature for players.
+- Deploy to a cloud platform for global access.
 
-dotenv: Loads environment variables from a .env file
+## License
+This project is licensed under the MIT License.
 
-Frontend
-react: JavaScript library for building user interfaces
+## Author
+Developed by [Your Name](https://github.com/yourusername). Contributions are welcome!
 
-axios: HTTP client for making API requests
-
-Troubleshooting
-Backend Server Not Running: Ensure that the .env file is correctly set up with the Gemini API key.
-
-Frontend Not Connecting to Backend: Ensure that the backend server is running on http://localhost:5000 and that there are no CORS issues.
-
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
