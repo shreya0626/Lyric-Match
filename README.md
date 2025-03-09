@@ -80,8 +80,6 @@ The frontend will be available at `http://localhost:3000`.
 - `GET /api/scores` - (Optional) Retrieves the leaderboard
 
 ---
-![image](https://github.com/user-attachments/assets/16c18136-42df-4d72-b81c-b3642b906df7)
-
 
 ## How to Play
 
@@ -90,6 +88,10 @@ The frontend will be available at `http://localhost:3000`.
 3. Type your guess for the song title and submit.
 4. The application will validate your guess and update the score.
 5. Try to get as many correct answers as possible!
+---
+![image](https://github.com/user-attachments/assets/2eb222b2-1f27-495e-837c-527693033aa2)
+---
+![image](https://github.com/user-attachments/assets/43fb84cc-8fed-496a-8112-3d8c84c5d97e)
 
 ---
 
