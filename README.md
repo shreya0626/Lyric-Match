@@ -102,10 +102,6 @@ The frontend will be available at `http://localhost:3000`.
 - Add a hints feature for players.
 - Deploy to a cloud platform for global access.
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Author
 
 Developed by [Shreya C]([https://github.com/yourusername](https://github.com/shreya0626)). Contributions are welcome!
