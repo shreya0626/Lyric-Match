@@ -89,6 +89,7 @@ The frontend will be available at `http://localhost:3000`.
 4. The application will validate your guess and update the score.
 5. Try to get as many correct answers as possible!
 ---
+![Screenshot (4)](https://github.com/user-attachments/assets/8dec91fd-9f42-4934-bbe6-e7dc29ec7b56)
 
 
 ---
